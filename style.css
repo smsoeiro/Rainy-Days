@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: rgb (135, 135, 135);
+  font-size: 24px;
+  line-height: 29 px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 46px;
+  color: rgb (33, 33, 33);
+  font-weight: 400;
+}
+
+small {
+  font-size: 16px;
+  position: relative;
+  top: -32px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: rgb (135, 135, 135);
+  list-style: none;
+  font-size: 16px;
+  line-height: 9 px;
+}
+
+.app {
+  border: 1px solid #dadde1;
+  padding: 30 px 15 px;
+  max-width: 500 px;
+  margin: 30 px auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #1b7fbd;
+}
+.stuff {
+  position: relative;
+  left: 15px;
+  margin-top: 20px;
+}

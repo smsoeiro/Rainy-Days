@@ -10,26 +10,42 @@
       crossorigin="anonymous"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <h1>Lisbon</h1>
+      <div class="app">
+        <div class="stuff">
+          <h1>Lisbon</h1>
 
-      <ul>
-        <li>Wednesday 19:00</li>
-        <li>Clear</li>
-      </ul>
-      <div class="row">
-        <div class="col-6">
-          <h2>22 <small>Cº</small></h2>
-        </div>
-        <div class="col-6">
           <ul>
-            <li>Humidity: 50%</li>
-            <li>Wind Speed:2 km/h</li>
-            <li>Max temp min temperature: 22 /15</li>
+            <li>Wednesday 19:00</li>
+            <li>Rain</li>
           </ul>
+          <div class="row mt-3">
+            <div class="col-6">
+              <div class="clearfix">
+                <div class="float-left mr-3 mt-1 ">
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+                    alt=""
+                  />
+                </div>
+                <div class="float-left">
+                  <h2>22<small>Cº</small></h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <ul>
+                <li>Humidity: 50%</li>
+                <li>Wind Speed:2 km/h</li>
+                <li>Max temp min: 22 /15</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
