@@ -27,6 +27,7 @@ li {
   color: rgb (135, 135, 135);
   list-style: none;
   font-size: 16px;
+  text-transform: capitalize;
   line-height: 9 px;
 }
 

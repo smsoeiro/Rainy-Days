@@ -21,11 +21,11 @@
     <div class="container">
       <div class="app">
         <div class="stuff">
-          <h1>Lisbon</h1>
+          <h1 id="place"></h1>
 
           <ul>
             <li>Wednesday 19:00</li>
-            <li>Rain</li>
+            <li id="description"></li>
           </ul>
           <div class="row mt-3">
             <div class="col-6">
@@ -44,9 +44,10 @@
 
             <div class="col-6">
               <ul>
-                <li>Humidity: 50%</li>
-                <li>Wind Speed:2 km/h</li>
-                <li>Max temp min: 22 /15</li>
+                <li>Humidity:<span id="humidity"></span>%</li>
+                <li>Wind Speed:<span id="windspeed"></span> km/h</li>
+                <li>Max temp: <span id="maxtemp"></span>C</li>
+                <li>Min temp: <span id="mintemp"></span>C</li>
               </ul>
             </div>
           </div>
