@@ -1,3 +1,23 @@
+function formatDate(date) {
+  let day = date.getDay();
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${days[day]} ${date.getHours()}:${minutes}`;
+}
+
 function showTemperature(response) {
   let temperature = document.querySelector("#temperature");
   temperature.innerText = Math.round(response.data.main.temp);
@@ -20,6 +40,9 @@ function showTemperature(response) {
   let minTemp = document.querySelector("#mintemp");
   minTemp.innerText = Math.round(response.data.main.temp_min);
   console.log(response.data);
+
+  let date = document.querySelector("#date");
+  date.innerText = formatDate(new Date(response.data.dt * 1000));
 }
 let city = "Lisbon";
 let apiKey = "a56a00f6a5a3edb84cee6e71e1a24e77";
