@@ -18,7 +18,7 @@ function formatDate(date) {
   return `${days[day]} ${date.getHours()}:${minutes}`;
 }
 
-function showTemperature(response) {
+function showWeather(response) {
   let temperature = document.querySelector("#temperature");
   temperature.innerText = Math.round(response.data.main.temp);
 
