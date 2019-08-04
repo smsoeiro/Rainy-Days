@@ -18,6 +18,17 @@ function formatDate(date) {
   return `${days[day]} ${date.getHours()}:${minutes}`;
 }
 
+function search(city) {
+  let apiKey = "a56a00f6a5a3edb84cee6e71e1a24e77";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+  axios.get(apiUrl).then(showWeather);
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let keyword = document.querySelector("#keyword");
+  search(keyword.value);
+}
+
 function showWeather(response) {
   let temperature = document.querySelector("#temperature");
   temperature.innerText = Math.round(response.data.main.temp);
@@ -45,6 +56,8 @@ function showWeather(response) {
   let date = document.querySelector("#date");
   date.innerText = formatDate(new Date(response.data.dt * 1000));
 
+  console.log(response.data);
+
   let icon = document.querySelector("#icon");
 
   icon.setAttribute(
@@ -53,8 +66,6 @@ function showWeather(response) {
   );
 }
 
-let city = "Lisbon";
-let apiKey = "a56a00f6a5a3edb84cee6e71e1a24e77";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
-
-axios.get(apiUrl).then(showWeather);
+let form = document.querySelector("form");
+form.addEventListener("submit", handleSubmit);
+search("Lisbon,PT ");
