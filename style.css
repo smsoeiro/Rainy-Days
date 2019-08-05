@@ -6,15 +6,14 @@ h1 {
   color: rgb (135, 135, 135);
   font-size: 30px;
   line-height: 29 px;
-  color: #f6ef98
-  
+  color: #f6ef98;
 }
 
 h2 {
   font-size: 46px;
   color: rgb (33, 33, 33);
   font-weight: 400;
-  color: #f6ef98
+  color: #f6ef98;
 }
 
 small {
@@ -48,8 +47,10 @@ li {
   position: relative;
   left: 15px;
   margin-top: 20px;
+}
 
-.grid {
+.week {
   text-align: center;
-  
+  margin-left: -20px;
+  margin-top: 20px;
 }
