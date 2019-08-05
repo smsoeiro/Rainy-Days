@@ -33,8 +33,6 @@ function showWeather(response) {
   let temperature = document.querySelector("#temperature");
   temperature.innerText = Math.round(response.data.main.temp);
 
-  console.log(response.data);
-
   let place = document.querySelector("#place");
   place.innerText = response.data.name;
 
@@ -66,11 +64,6 @@ function showWeather(response) {
   );
 }
 
-function ShoWPrecipitaiton(response) {
-  let precipitaiton = document.querySelector("#precipitation");
-  precipitation.innerText = Math.round(response.data.main.rain["3h"]);
-}
-
 let form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
-search("Queluz, pt");
+search("lisbon, pt");

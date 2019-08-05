@@ -26,8 +26,9 @@
     <div class="container">
       <div class="app">
         <div class="stuff">
+          <h3>Will it Rain Today?🧭</h3>
           <form class="form-inline">
-            <div class="form-group mb-2 mr-2">
+            <div class="form-group mb-2 mr-2 mt-2">
               <input
                 type="City"
                 class="form-control"
@@ -35,12 +36,17 @@
                 id="keyword"
               />
             </div>
-            <button type="submit" class="btn btn-primary mb-2  mr-2">
+            <button type="submit" class="btn btn-primary mb-2 mr-2 mt-2">
               Search
             </button>
-            <button type="submit" class="btn btn-warning mb-2 mr-2">
-              Current Location
-            </button>
+            <div class="#currentLocation">
+              <button
+                id="current location"
+                class="btn btn-warning mb-2 mr-2 mt-2"
+              >
+                Current Location
+              </button>
+            </div>
           </form>
           <strong>
             <h1 id="place"></h1>
@@ -64,12 +70,14 @@
 
             <div class="col-6">
               <h3><div class="fal fa-clouds-sun"></div></h3>
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind Speed: <span id="windspeed"></span> km/h</li>
-                <li>Max temp: <span id="maxtemp"></span>Cº</li>
-                <li>Min temp: <span id="mintemp"></span>Cº</li>
-              </ul>
+              <strong>
+                <ul>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind Speed: <span id="windspeed"></span> km/h</li>
+                  <li>Max temp: <span id="maxtemp"></span>Cº</li>
+                  <li>Min temp: <span id="mintemp"></span>Cº</li>
+                </ul>
+              </strong>
             </div>
           </div>
         </div>
