@@ -66,6 +66,11 @@ function showWeather(response) {
   );
 }
 
+function ShoWPrecipitaiton(response) {
+  let precipitaiton = document.querySelector("#precipitation");
+  precipitation.innerText = Math.round(response.data.main.rain["3h"]);
+}
+
 let form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
-search("Lisbon,pt ");
+search("Queluz, pt");
