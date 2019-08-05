@@ -64,4 +64,4 @@ function showWeather(response) {
 
 let form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
-search("lisbon, pt");
+search("Queluz, pt");
