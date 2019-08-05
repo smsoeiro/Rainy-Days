@@ -16,6 +16,12 @@ h2 {
   color: #f6ef98;
 }
 
+h3 {
+  color: #f6ef98;
+  font-size: 45px;
+  text-align: center;
+}
+
 small {
   font-size: 16px;
   position: relative;
