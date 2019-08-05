@@ -54,8 +54,6 @@ function showWeather(response) {
   let date = document.querySelector("#date");
   date.innerText = formatDate(new Date(response.data.dt * 1000));
 
-  console.log(response.data);
-
   let icon = document.querySelector("#icon");
 
   icon.setAttribute(
