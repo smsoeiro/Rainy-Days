@@ -44,6 +44,7 @@ li {
 
 .app {
   border: 1px solid #dadde1;
+  box-shadow: 2 px 2px;
   padding: 30 px 15 px;
   max-width: 50%;
   margin: 30 px auto;
