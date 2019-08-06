@@ -1,6 +1,8 @@
 body {
   font-family: "Indie Flower", cursive;
   font-style: unset;
+  color: white;
+  text-shadow: 2px 2px #333;
 }
 h1 {
   color: rgb (135, 135, 135);
